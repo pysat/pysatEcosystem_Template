@@ -49,7 +49,7 @@ Development
 
 To set up `PACKAGENAME` for local development:
 
-1. [Fork pysat on GitHub](https://github.com/pysat/PACKAGENAME/fork).
+1. [Fork PACKAGENAME on GitHub](https://github.com/pysat/PACKAGENAME/fork).
 
 2. Clone your fork locally:
 
@@ -65,26 +65,40 @@ To set up `PACKAGENAME` for local development:
 
    Now you can make your changes locally.
 
-   Tests for new instruments are performed automatically.  Tests for custom
-   functions should be added to the appropriately named file in ``PACKAGENAME/tests``.
-   For example, custom functions for the time utilities are tested in
-   ``PACKAGENAME/tests/test_utils_time.py``.  If no test file exists, then you should
-   create one.  This testing uses pytest, which will run tests on any python
-   file in the test directory that starts with ``test``.  Classes must begin
-   with ``Test``, and methods must begin with ``test`` as well.
+   Tests for new instruments are performed automatically.  See discussion
+   [here](https://pysat.readthedocs.io/en/main/new_instrument.html#testing-support)
+   for more information on triggering these standard tests.
+
+   Tests for custom functions should be added to the appropriately named file
+   in ``PACKAGENAME/tests``. For example, custom functions for the time
+   utilities are tested in ``pysat/tests/test_utils_time.py``.  If no test file
+   exists, then you should create one.  This testing uses pytest, which will run
+   tests on any python file in the test directory that starts with ``test``.  
+   Classes must begin with ``Test``, and methods must begin with ``test`` as
+  well.
 
 4. When you're done making changes, run all the checks to ensure that nothing
-   is broken on your local system, as well as check for flake8 compliance:
+   is broken on your local system:
 
    ```
-    pytest -vs --flake8 PACKAGENAME
+   pytest PACKAGENAME
    ```
 
-5. Update/add documentation (in ``docs``), if relevant
+5. You should also check for flake8 style compliance:
 
-6. Add your name to the .zenodo.json file as an author
+   ```
+   flake8 . --count --select=D,E,F,H,W --show-source --statistics
+   ```
 
-7. Commit your changes:
+   Note that pysat uses the `flake-docstrings` and `hacking` packages to ensure
+   standards in docstring formatting.
+
+
+6. Update/add documentation (in ``docs``), if relevant
+
+7. Add your name to the .zenodo.json file as an author
+
+8. Commit your changes:
    ```
    git add .
    git commit -m "AAA: Brief description of your changes"
@@ -93,14 +107,15 @@ To set up `PACKAGENAME` for local development:
    `pysat` follows the [numpy development workflow](https://numpy.org/doc/stable/dev/development_workflow.html),
    see the discussion there for a full list of this shorthand notation.  
 
-8. Once you are happy with the local changes, push to Github:
+9. Once you are happy with the local changes, push to Github:
    ```
    git push origin name-of-your-bugfix-or-feature
    ```
    Note that each push will trigger the Continuous Integration workflow.
 
-9. Submit a pull request through the GitHub website. Pull requests should be
-   made to the ``develop`` branch.
+10. Submit a pull request through the GitHub website. Pull requests should be
+    made to the ``develop`` branch.  Note that automated tests will be run on
+    github actions, but these must be initialized by a member of the pysat team.
 
 
 Pull Request Guidelines
