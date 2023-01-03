@@ -7,7 +7,7 @@ contributions.
 
 Come join us on Slack! An invitation to the pysat workspace is available
 in the 'About' section of the
-[PACKAGENAME GitHub Repository.](https://github.com/pysat/PACKAGENAME) Development meetings
+[pysat GitHub Repository.](https://github.com/pysat/pysat) Development meetings
 are generally held fortnightly.
 
 Short version
@@ -49,7 +49,7 @@ Development
 
 To set up `PACKAGENAME` for local development:
 
-1. [Fork pysat on GitHub](https://github.com/pysat/PACKAGENAME/fork).
+1. [Fork PACKAGENAME on GitHub](https://github.com/pysat/PACKAGENAME/fork).
 
 2. Clone your fork locally:
 
