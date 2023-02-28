@@ -1,6 +1,6 @@
 <div align="left">
         <img height="0" width="0px">
-        <img width="20%" src="https://raw.githubusercontent.com/pysat/pysatEcosystem_Template/main/docs/figures/pysatEcosystem_Template.png" alt="PACKAGENAME" title="PACKAGENAME" </img>
+        <img width="20%" src="https://raw.githubusercontent.com/pysat/pysatEcosystem_Template/main/docs/figures/packagename_logo.jpg" alt="PACKAGENAME" title="PACKAGENAME" </img>
 </div>
 
 # PACKAGENAME: pysat support for THIS TYPE OF DATA OR ANALYSIS

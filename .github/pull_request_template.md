@@ -1,12 +1,12 @@
 # Description
 
-Addresses #(issue)
+Addresses # (issue)
 
 Please include a summary of the change and which issue is fixed. Please also
 include relevant motivation and context. List any dependencies that are required
 for this change.  Please see ``CONTRIBUTING.md`` for more guidelines.
 
-## Type of change
+# Type of change
 
 Please delete options that are not relevant.
 
@@ -19,13 +19,14 @@ Please delete options that are not relevant.
 # How Has This Been Tested?
 
 Please describe the tests that you ran to verify your changes. Provide
-instructions so we can reproduce. Please also list any relevant details for
-your test configuration
+instructions so we can reproduce the problem and the solution. Including images
+or test files is frequently very useful.  Please also list any relevant details
+for your test configuration.
 
 - Test A
 - Test B
 
-**Test Configuration**:
+## Test Configuration
 * Operating system: Hal
 * Version number: Python 3.X
 * Any details about your local setup that are relevant
@@ -43,5 +44,6 @@ your test configuration
 - [ ] Any dependent changes have been merged and published in downstream modules
 - [ ] Add a note to ``CHANGELOG.md``, summarizing the changes
 
-If this is a release PR, replace the first item of the above checklist with the release
-checklist on the wiki: https://github.com/pysat/pysat/wiki/Checklist-for-Release
+If this is a release PR, replace the first item of the above checklist with the
+release checklist on the pysat wiki:
+https://github.com/pysat/pysat/wiki/Checklist-for-Release
