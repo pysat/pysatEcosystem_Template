@@ -7,7 +7,7 @@ contributions.
 
 Come join us on Slack! An invitation to the pysat workspace is available
 in the 'About' section of the
-[PACKAGENAME GitHub Repository.](https://github.com/pysat/PACKAGENAME) Development meetings
+[pysat GitHub Repository.](https://github.com/pysat/pysat) Development meetings
 are generally held fortnightly.
 
 Short version

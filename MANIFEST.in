@@ -1,0 +1,12 @@
+include *.py
+include *.f
+include *.c
+recursive-include PACKAGENAME *.py
+include *.md
+include *.txt
+include LICENSE
+include PACKAGENAME/version.txt
+prune PACKAGENAME/tests
+prune docs
+exclude *.pdf
+exclude *.png
