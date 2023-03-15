@@ -107,7 +107,7 @@ To set up `PACKAGENAME` for local development:
    `pysat` follows the [numpy development workflow](https://numpy.org/doc/stable/dev/development_workflow.html),
    see the discussion there for a full list of this shorthand notation.  
 
-9. Once you are happy with the local changes, push to Github:
+9. Once you are happy with the local changes, push to GitHub:
    ```
    git push origin name-of-your-bugfix-or-feature
    ```
