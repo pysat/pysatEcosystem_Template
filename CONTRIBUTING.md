@@ -13,7 +13,8 @@ are generally held fortnightly.
 Short version
 -------------
 
-* Submit bug reports and feature requests at [GitHub](https://github.com/pysat/PACKAGENAME/issues)
+* Submit bug reports and feature requests at
+  [GitHub](https://github.com/pysat/PACKAGENAME/issues)
 
 * Make pull requests to the ``develop`` branch
 
@@ -75,7 +76,7 @@ To set up `PACKAGENAME` for local development:
    exists, then you should create one.  This testing uses pytest, which will run
    tests on any python file in the test directory that starts with ``test``.  
    Classes must begin with ``Test``, and methods must begin with ``test`` as
-  well.
+   well.
 
 4. When you're done making changes, run all the checks to ensure that nothing
    is broken on your local system:
@@ -115,7 +116,7 @@ To set up `PACKAGENAME` for local development:
 
 10. Submit a pull request through the GitHub website. Pull requests should be
     made to the ``develop`` branch.  Note that automated tests will be run on
-    github actions, but these must be initialized by a member of the pysat team.
+    GitHub Actions, but these must be initialized by a member of the pysat team.
 
 
 Pull Request Guidelines
@@ -129,7 +130,8 @@ For merging, you should:
 1. Include an example for use
 2. Add a note to ``CHANGELOG.md`` about the changes
 3. Update the author list in ``zenodo.json`` if applicable
-4. Ensure that all checks passed (current checks include Github Actions and Coveralls)
+4. Ensure that all checks passed (current checks include Github Actions and
+   Coveralls)
 
 If you don't have all the necessary Python versions available locally or
 have trouble building all the testing environments, you can rely on
