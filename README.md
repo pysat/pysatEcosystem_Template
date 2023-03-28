@@ -6,7 +6,8 @@
 # PACKAGENAME: pysat support for THIS TYPE OF DATA OR ANALYSIS
 [![Pytest with Flake8](https://github.com/pysat/pysatEcosystem_Template/actions/workflows/main.yml/badge.svg)](https://github.com/pysat/pysatEcosystem_Template/actions/workflows/main.yml)
 [Coverage Status] (ADD COVERALLS LINK)
-[DOI] (ADD ZENODO LINK) [Documentation] (ADD READTHEDOCS LINK)
+[DOI] (ADD ZENODO LINK)
+[Documentation] (ADD READTHEDOCS LINK)
 [PyPI] version (ADD PYPI LINK)
 
 
@@ -48,10 +49,9 @@ cd PACKAGENAME/
 python setup.py install
 ```
 
-Note: pre-0.1.0 version
------------------------
-Only include this if PACKAGENAME is currently in an alpha development phase.  Feedback and
-contributions are appreciated.
+### Note: pre-0.1.0 version
+Only include this if PACKAGENAME is currently in an alpha development phase.
+Feedback and contributions are appreciated.
 
 # Examples
 
@@ -73,4 +73,5 @@ pysat.utils.registry.register('PACKAGENAME.instruments.EX_INST')
 inst = pysat.Instrument('EX', 'INST')
 ```
 
-The package include analysis tools as well.  Detailed examples are in the documentation (LINK TO READTHEDOCS).
+The package include analysis tools as well.  Detailed examples are in the
+documentation (LINK TO READTHEDOCS).
