@@ -30,12 +30,11 @@ jobs:
       run: brew reinstall gcc
 
     - name: Install pysat RC
-      run: pip install --no-deps -i https://test.pypi.org/simple/ pysat
+      run: pip install --no-deps --pre -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ pysat
 
-    - name: Install standard dependencies
-      run: |
-        pip install -r requirements.txt
-        pip install -r test_requirements.txt
+    - name: Install standard dependencies and package
+      if: ${{ matrix.test_config == 'latest'}}
+      run: pip install .[test]
 
     - name: Set up pysat
       run: |
@@ -44,9 +43,9 @@ jobs:
 
     # Replace PACKAGENAME with package name.
     - name: Test with pytest
-      run: pytest -vs --cov=PACKAGENAME/
+      run: pytest
 
     - name: Publish results to coveralls
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: coveralls --rcfile=setup.cfg --service=github
+      run: coveralls --rcfile=pyproject.toml --service=github
