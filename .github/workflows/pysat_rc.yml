@@ -41,7 +41,6 @@ jobs:
         mkdir pysatData
         python -c "import pysat; pysat.params['data_dirs'] = 'pysatData'"
 
-    # Replace PACKAGENAME with package name.
     - name: Test with pytest
       run: pytest
 

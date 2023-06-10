@@ -24,7 +24,7 @@ from pyproject_parser import PyProject
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-# -- Project information -----------------------------------------------------
+# -- Project information - Replace PACKAGENAME, ETC with appropriate package information ---
 
 info = PyProject.load("../pyproject.toml")
 
