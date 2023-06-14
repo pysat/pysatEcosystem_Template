@@ -20,8 +20,28 @@
 
 import json
 import os
+from pyproject_parser import PyProject
 import sys
 sys.path.insert(0, os.path.abspath('..'))
+
+# -- Project information - Replace PACKAGENAME, ETC with appropriate package information ---
+
+info = PyProject.load("../pyproject.toml")
+
+project = 'PACKAGENAME'
+title = '{:s} Documentation'.format(project)
+zenodo = json.loads(open('../.zenodo.json').read())
+author = ', '.join([auth['name'] for auth in zenodo['creators']])
+description = 'PACKAGENAME DESCRIPTION.'
+category = 'PACKAGENAME CATEGORY'  # e.g., 'Space Physics'
+copyright = ', '.join(['YYYY', author])
+
+# The short X.Y version
+version = info.project['version'].base_version
+
+# The full version, including alpha/beta/rc tags.
+release = '{:s}-alpha'.format(version)
+
 
 # -- General configuration ------------------------------------------------
 
@@ -55,15 +75,6 @@ source_suffix = '.rst'
 # The main toctree document (using required variable name).
 master_doc = 'index'
 
-# General information about the project.
-project = 'PACKAGENAME'
-title = '{:s} Documentation'.format(project)
-zenodo = json.loads(open('../.zenodo.json').read())
-author = ', '.join([auth['name'] for auth in zenodo['creators']])
-description = 'PACKAGENAME DESCRIPTION.'
-category = 'PACKAGENAME CATEGORY'  # e.g., 'Space Physics'
-copyright = ', '.join(['YYYY', author])
-
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -77,7 +88,7 @@ release = '{:s}-alpha'.format(version)  # Include alpha/beta/rc tags.
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language ='en'
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
