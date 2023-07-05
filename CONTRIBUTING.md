@@ -82,7 +82,7 @@ To set up `PACKAGENAME` for local development:
    is broken on your local system:
 
    ```
-   pytest PACKAGENAME
+   pytest
    ```
 
 5. You should also check for flake8 style compliance:
@@ -167,7 +167,7 @@ These include:
 * All classes should have `__repr__` and `__str__` functions
 * Docstrings use `Note` instead of `Notes`
 * Try to avoid creating a try/except statement where except passes
-* Use setup and teardown in test classes
+* Use setup_method (or setup_class) and teardown_method (or teardown_class) in test classes
 * Use pytest parametrize in test classes when appropriate
 * Use pysat testing utilities when appropriate
 * Provide testing class methods with informative failure statements and
