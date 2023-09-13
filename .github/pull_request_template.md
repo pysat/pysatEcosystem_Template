@@ -24,7 +24,10 @@ or test files is frequently very useful.  Please also list any relevant details
 for your test configuration.
 
 - Test A
-- Test B
+
+```
+Test B
+```
 
 ## Test Configuration
 * Operating system: Hal
@@ -36,6 +39,7 @@ for your test configuration.
 - [ ] Make sure you are merging into the ``develop`` (not ``main``) branch
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
+- [ ] I have linted the files updated in this pull request
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation
 - [ ] My changes generate no new warnings
