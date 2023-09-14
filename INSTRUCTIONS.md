@@ -50,3 +50,8 @@ Installation/Python Basics
 * setup.cfg
 * test_requirements.txt
 * PACKAGENAME/__init__.py
+
+Release Support
+---------------
+
+* .zenodo.json
