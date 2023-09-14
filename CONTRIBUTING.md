@@ -47,8 +47,8 @@ include:
 Feature requests and feedback
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The best way to send feedback is to file an issue at
-[GitHub](https://github.com/pysat/PACKAGENAME/issues).
+The best way to send feedback is to file an
+[issue](https://github.com/pysat/PACKAGENAME/issues).
 
 If you are proposing a new feature or a change in something that already exists:
 
