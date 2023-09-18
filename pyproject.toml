@@ -3,7 +3,7 @@ requires = ["setuptools >= 38.6", "pip >= 10"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = PACKAGENAME
+name = "PACKAGENAME"
 version = "0.0.1"
 description = 'pysat support for DATA OR ANALYSIS'
 readme = "README.md"

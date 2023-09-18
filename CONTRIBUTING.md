@@ -2,8 +2,8 @@ Contributing
 ============
 
 Bug reports, feature suggestions, and other contributions are greatly
-appreciated!  pysat is a community-driven project and welcomes both feedback and
-contributions.
+appreciated!  pysat and (PROJECT NAME) are community-driven projects that
+welcome both feedback and contributions.
 
 Come join us on Slack! An invitation to the pysat workspace is available
 in the 'About' section of the
@@ -13,13 +13,27 @@ are generally held fortnightly.
 Short version
 -------------
 
-* Submit bug reports and feature requests at
+* Submit bug reports, feature requests, and questions at
   [GitHub](https://github.com/pysat/PACKAGENAME/issues)
 
 * Make pull requests to the ``develop`` branch
 
+Issues
+------
+
+Bug reports, questions, and feature requests should all be made as GitHub
+Issues.  Templates are provided for each type of issue, to help you include
+all the necessary information.
+
+Questions
+^^^^^^^^^
+
+Not sure how something works?  Ask away!  The more information you provide, the
+easier the question will be to answer.  You can also interact with the pysat
+developers on our [slack channel](https://pysat.slack.com).
+
 Bug reports
------------
+^^^^^^^^^^^
 
 When [reporting a bug](https://github.com/pysat/PACKAGENAME/issues) please
 include:
@@ -31,12 +45,12 @@ include:
 * Detailed steps to reproduce the bug
 
 Feature requests and feedback
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The best way to send feedback is to file an issue at
-[GitHub](https://github.com/pysat/PACKAGENAME/issues).
+The best way to send feedback is to file an
+[issue](https://github.com/pysat/PACKAGENAME/issues).
 
-If you are proposing a feature:
+If you are proposing a new feature or a change in something that already exists:
 
 * Explain in detail how it would work.
 
@@ -94,8 +108,8 @@ To set up `PACKAGENAME` for local development:
    Note that pysat uses the `flake-docstrings` and `hacking` packages to ensure
    standards in docstring formatting.
 
-
-6. Update/add documentation (in ``docs``), if relevant
+6. Update/add documentation (in ``docs``).  Even if you don't think it's
+   relevant, check to see if any existing examples have changed.
 
 7. Add your name to the .zenodo.json file as an author
 
@@ -133,11 +147,11 @@ For merging, you should:
 4. Ensure that all checks passed (current checks include Github Actions and
    Coveralls)
 
-If you don't have all the necessary Python versions available locally or
-have trouble building all the testing environments, you can rely on
-GitHub Actions to run the tests for each change you add in the pull
-request. Because testing here will delay tests by other developers,
-please ensure that the code passes all tests on your local system first.
+If you don't have all the necessary Python versions available locally or have
+trouble building all the testing environments, you can rely on GitHub Actions to
+run the tests for each change you add in the pull request. Because testing here
+will delay tests by other developers, please ensure that the code passes all
+tests on your local system first.
 
 
 Project Style Guidelines
@@ -167,7 +181,8 @@ These include:
 * All classes should have `__repr__` and `__str__` functions
 * Docstrings use `Note` instead of `Notes`
 * Try to avoid creating a try/except statement where except passes
-* Use setup_method (or setup_class) and teardown_method (or teardown_class) in test classes
+* Use setup_method (or setup_class) and teardown_method (or teardown_class) in
+  test classes
 * Use pytest parametrize in test classes when appropriate
 * Use pysat testing utilities when appropriate
 * Provide testing class methods with informative failure statements and
