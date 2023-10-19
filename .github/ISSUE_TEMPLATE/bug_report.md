@@ -21,8 +21,8 @@ Consider including images or test files to help others reproduce the bug and
 solve the problem.
 
 ## Test configuration
- - OS: [e.g. Hal]
- - Version [e.g. Python 3.47]
+ - OS: [e.g., Hal]
+ - Version [e.g., Python 3.47]
  - Other details about your setup that could be relevant
 
 # Additional context
