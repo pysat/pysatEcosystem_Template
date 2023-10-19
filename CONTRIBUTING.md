@@ -2,8 +2,8 @@ Contributing
 ============
 
 Bug reports, feature suggestions, and other contributions are greatly
-appreciated!  pysat is a community-driven project and welcomes both feedback and
-contributions.
+appreciated!  pysat and PACKAGENAME are community-driven projects and welcome
+both feedback and contributions.
 
 Come join us on Slack! An invitation to the pysat workspace is available
 in the 'About' section of the
@@ -106,7 +106,7 @@ To set up `PACKAGENAME` for local development:
    ```
    Where AAA is a standard shorthand for the type of change (eg, BUG or DOC).
    `pysat` follows the [numpy development workflow](https://numpy.org/doc/stable/dev/development_workflow.html),
-   see the discussion there for a full list of this shorthand notation.  
+   see the discussion there for a full list of this shorthand notation.
 
 9. Once you are happy with the local changes, push to GitHub:
    ```
@@ -130,14 +130,14 @@ For merging, you should:
 1. Include an example for use
 2. Add a note to ``CHANGELOG.md`` about the changes
 3. Update the author list in ``zenodo.json`` if applicable
-4. Ensure that all checks passed (current checks include Github Actions and
-   Coveralls)
+4. Ensure that all checks passed (current checks include GitHub Actions,
+   Coveralls, and ReadTheDocs)
 
-If you don't have all the necessary Python versions available locally or
-have trouble building all the testing environments, you can rely on
-GitHub Actions to run the tests for each change you add in the pull
-request. Because testing here will delay tests by other developers,
-please ensure that the code passes all tests on your local system first.
+If you don't have all the necessary Python versions available locally or have
+trouble building all the testing environments, you can rely on GitHub Actions to
+run the tests for each change you add in the pull request. Because testing here
+will delay tests by other developers, please ensure that the code passes all
+tests on your local system first.
 
 
 Project Style Guidelines
@@ -167,7 +167,8 @@ These include:
 * All classes should have `__repr__` and `__str__` functions
 * Docstrings use `Note` instead of `Notes`
 * Try to avoid creating a try/except statement where except passes
-* Use setup_method (or setup_class) and teardown_method (or teardown_class) in test classes
+* Use setup_method (or setup_class) and teardown_method (or teardown_class) in
+  test classes
 * Use pytest parametrize in test classes when appropriate
 * Use pysat testing utilities when appropriate
 * Provide testing class methods with informative failure statements and
