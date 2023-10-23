@@ -73,5 +73,5 @@ pysat.utils.registry.register('PACKAGENAME.instruments.EX_INST')
 inst = pysat.Instrument('EX', 'INST')
 ```
 
-The package include analysis tools as well.  Detailed examples are in the
-documentation (LINK TO READTHEDOCS).
+The package also includes analysis tools.  Detailed examples are in the
+[documentation](LINK TO READTHEDOCS).
