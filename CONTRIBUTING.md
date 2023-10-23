@@ -120,7 +120,7 @@ To set up `PACKAGENAME` for local development:
    ```
    Where AAA is a standard shorthand for the type of change (eg, BUG or DOC).
    `pysat` follows the [numpy development workflow](https://numpy.org/doc/stable/dev/development_workflow.html),
-   see the discussion there for a full list of this shorthand notation.  
+   see the discussion there for a full list of this shorthand notation.
 
 9. Once you are happy with the local changes, push to GitHub:
    ```
@@ -144,8 +144,8 @@ For merging, you should:
 1. Include an example for use
 2. Add a note to ``CHANGELOG.md`` about the changes
 3. Update the author list in ``zenodo.json`` if applicable
-4. Ensure that all checks passed (current checks include Github Actions and
-   Coveralls)
+4. Ensure that all checks passed (current checks include GitHub Actions,
+   Coveralls, and ReadTheDocs)
 
 If you don't have all the necessary Python versions available locally or have
 trouble building all the testing environments, you can rely on GitHub Actions to
