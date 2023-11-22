@@ -130,7 +130,8 @@ To set up `PACKAGENAME` for local development:
 
 10. Submit a pull request through the GitHub website. Pull requests should be
     made to the ``develop`` branch.  Note that automated tests will be run on
-    GitHub Actions, but these must be initialized by a member of the pysat team.
+    GitHub Actions, but these must be initialized by a member of the pysat team
+    for first time contributors.
 
 
 Pull Request Guidelines
