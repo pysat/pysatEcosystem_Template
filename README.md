@@ -41,12 +41,13 @@ pip install PACKAGENAME
 git clone https://github.com/pysat/PACKAGENAME.git
 ```
 
-Change directories into the repository folder and run the setup.py file.  For
-a local install use the "--user" flag after "install".
+Change directories into the repository folder and run the pyproject.toml or
+setup.py file.  For a local install use the "--user" flag after "install".
 
 ```
 cd PACKAGENAME/
-python setup.py install
+python -m build .
+pip install .
 ```
 
 ### Note: pre-0.1.0 version
