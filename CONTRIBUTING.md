@@ -88,7 +88,7 @@ To set up `PACKAGENAME` for local development:
    in ``PACKAGENAME/tests``. For example, custom functions for the time
    utilities are tested in ``pysat/tests/test_utils_time.py``.  If no test file
    exists, then you should create one.  This testing uses pytest, which will run
-   tests on any python file in the test directory that starts with ``test``.  
+   tests on any Python file in the test directory that starts with ``test``.  
    Classes must begin with ``Test``, and methods must begin with ``test`` as
    well.
 
@@ -118,7 +118,7 @@ To set up `PACKAGENAME` for local development:
    git add .
    git commit -m "AAA: Brief description of your changes"
    ```
-   Where AAA is a standard shorthand for the type of change (eg, BUG or DOC).
+   Where AAA is a standard shorthand for the type of change (e.g., BUG or DOC).
    `pysat` follows the [numpy development workflow](https://numpy.org/doc/stable/dev/development_workflow.html),
    see the discussion there for a full list of this shorthand notation.
 
@@ -144,7 +144,7 @@ For merging, you should:
 
 1. Include an example for use
 2. Add a note to ``CHANGELOG.md`` about the changes
-3. Update the author list in ``zenodo.json`` if applicable
+3. Update the author list in ``zenodo.json``, if applicable
 4. Ensure that all checks passed (current checks include GitHub Actions,
    Coveralls, and ReadTheDocs)
 
