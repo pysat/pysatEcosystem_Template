@@ -24,7 +24,7 @@ Python 3.6+.
  ============== =================
  Common modules Community modules
  ============== =================
-  numpy        pysat >= 3.1.0
+  numpy         pysat >= 3.1.0
   pandas
   xarray
  ============== =================
@@ -72,7 +72,8 @@ You can keep up to date with the latest changes at the GitHub repository.
 
         python -m build
 	pip install .
-   C. Install with the intent to develop locally::
+
+   B. Install with the intent to develop locally::
 
 
         python -m build
