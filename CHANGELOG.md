@@ -26,6 +26,7 @@ This project adheres to Semantic Versioning.
 --------------------
 * Updated coveralls integration
 * Cycled Python and NEP29 testing
+* Update GitHub Actions versions
 
 [0.1.1] - 2024-02-29
 --------------------
