@@ -27,7 +27,7 @@ jobs:
             test_config: "SPEC0"
           # Operational compliance settings
           - python-version: "3.9"
-            numpy_ver: "1.25.5"
+            numpy_ver: "1.23.5"
             os: "ubuntu-20.04"
             test_config: "Ops"
 
