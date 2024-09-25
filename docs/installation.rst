@@ -41,8 +41,8 @@ Installation Options
 
 PyPi
 ^^^^
-All official pysatSpaceWeather releases are `available <link>`_ through the
-PyPi package manager.
+All official PACKAGENAME releases are `available <link>`_ through the PyPi
+package manager.
 ::
 
 
